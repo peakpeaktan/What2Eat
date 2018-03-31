@@ -12,6 +12,7 @@
 		80979798206FEB2A00858BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80979796206FEB2A00858BE0 /* Main.storyboard */; };
 		8097979A206FEB2A00858BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80979799206FEB2A00858BE0 /* Assets.xcassets */; };
 		8097979D206FEB2A00858BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8097979B206FEB2A00858BE0 /* LaunchScreen.storyboard */; };
+		BDF42F17F1AA2E859C53620B /* Pods_What2Eat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7A74375029847432252428 /* Pods_What2Eat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		80979799206FEB2A00858BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8097979C206FEB2A00858BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8097979E206FEB2A00858BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0EDC5572F5BB06FF532A54 /* Pods-What2Eat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What2Eat.release.xcconfig"; path = "Pods/Target Support Files/Pods-What2Eat/Pods-What2Eat.release.xcconfig"; sourceTree = "<group>"; };
+		9C7A74375029847432252428 /* Pods_What2Eat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_What2Eat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A970B5BC869EC11F8C909C4E /* Pods-What2Eat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What2Eat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-What2Eat/Pods-What2Eat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF42F17F1AA2E859C53620B /* Pods_What2Eat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22B6FAEECA82AC2C30E537F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C7A74375029847432252428 /* Pods_What2Eat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80979786206FEB2900858BE0 = {
 			isa = PBXGroup;
 			children = (
 				80979791206FEB2A00858BE0 /* What2Eat */,
 				80979790206FEB2A00858BE0 /* Products */,
+				A5CB470EC8A268617012CE37 /* Pods */,
+				22B6FAEECA82AC2C30E537F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,31 @@
 		80979791206FEB2A00858BE0 /* What2Eat */ = {
 			isa = PBXGroup;
 			children = (
+				809797A4206FEC0600858BE0 /* New Group */,
 				80979792206FEB2A00858BE0 /* AppDelegate.swift */,
 				80979794206FEB2A00858BE0 /* ViewController.swift */,
-				80979796206FEB2A00858BE0 /* Main.storyboard */,
 				80979799206FEB2A00858BE0 /* Assets.xcassets */,
-				8097979B206FEB2A00858BE0 /* LaunchScreen.storyboard */,
 				8097979E206FEB2A00858BE0 /* Info.plist */,
 			);
 			path = What2Eat;
+			sourceTree = "<group>";
+		};
+		809797A4206FEC0600858BE0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				8097979B206FEB2A00858BE0 /* LaunchScreen.storyboard */,
+				80979796206FEB2A00858BE0 /* Main.storyboard */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A5CB470EC8A268617012CE37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A970B5BC869EC11F8C909C4E /* Pods-What2Eat.debug.xcconfig */,
+				8A0EDC5572F5BB06FF532A54 /* Pods-What2Eat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 809797A1206FEB2A00858BE0 /* Build configuration list for PBXNativeTarget "What2Eat" */;
 			buildPhases = (
+				05FBCC5BAAC6B7C7327956DF /* [CP] Check Pods Manifest.lock */,
 				8097978B206FEB2A00858BE0 /* Sources */,
 				8097978C206FEB2A00858BE0 /* Frameworks */,
 				8097978D206FEB2A00858BE0 /* Resources */,
+				0B51474AC7249C6724498B98 /* [CP] Embed Pods Frameworks */,
+				ED6043F1A67909DA55B41876 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +165,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05FBCC5BAAC6B7C7327956DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-What2Eat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B51474AC7249C6724498B98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-What2Eat/Pods-What2Eat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JVFloatingDrawer/JVFloatingDrawer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatingDrawer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-What2Eat/Pods-What2Eat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED6043F1A67909DA55B41876 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-What2Eat/Pods-What2Eat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8097978B206FEB2A00858BE0 /* Sources */ = {
@@ -272,6 +361,7 @@
 		};
 		809797A2206FEB2A00858BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A970B5BC869EC11F8C909C4E /* Pods-What2Eat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +377,7 @@
 		};
 		809797A3206FEB2A00858BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0EDC5572F5BB06FF532A54 /* Pods-What2Eat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
